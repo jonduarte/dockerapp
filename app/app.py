@@ -8,7 +8,6 @@ cache.set(default_key, "one")
 
 @app.route('/', methods=['GET', 'POST'])
 def mainpage():
-
 	key = default_key
 	if 'key' in request.form:
 	    key = request.form['key']
